@@ -1,0 +1,96 @@
+/*****************************************************************************
+TITLE: Claims																																
+Name : Shefali Bishnoi(2301CS87)
+Declaration of Authorship
+This txt file, Claims_asm.txt, is part of the assignment of CS2102  at the 
+department of Computer Science and Engineering, IIT Patna . 
+*****************************************************************************/
+
+Files:
+==========
+All the files that I am submitting ( asm.c and Claims_asm.txt), have my name and student roll number at the start, along with a declaration of authorship.
+
+The evidence for Assembler including the output files from the  test examples given  and bubblesort has also been uploaded.  
+All the test files have been tested and work properly. 
+
+
+Compilation instructions:
+=========================
+
+    gcc asm.c -o asm
+
+    * The input file should be present in same folder as c file is present.
+    * Ouput files - if there are errors then .log and if there are no errors then .o file and .lst file
+
+
+Assumptions:
+============
+    * Listing file (.lst) and Object file(.o) are generated only when there are no errors in the input Assembly code,  
+      otherwise only Error file (.log) is generated.
+
+
+=============================
+Program format and structure:
+=============================
+1. The assembler:
+
+    * It is a 2 pass assembler (implemented in asm.c)    
+    * Every instruction is implemented.
+    * It contains a table of instruction names and expected operands.
+    * outputs the required correct information in the form of three files
+    *  .log file for errors and warnings
+    *  .lst file for listing 
+    *  .o file for machine code object
+    
+    * Consistent and sensible formatting with sensible program structure. 
+    * sensible variable, function & type names with explanatory comments.
+    * Advanced listing file gets generated. (named "file_name".lst)
+    * Assembles test programs .
+    * Machine code object file gets generated (named "file_name".o)
+    * All important errors are diagnosed and corresponding error file gets generated (named "file_name".log)
+    * SET instruction is also implemented (which carries extra marks).
+    * Code is written in C .
+    * Additional test case with outputs is also included in submission.
+
+
+
+
+=============================
+Testing:
+=============================
+
+1. The assembler:
+
+I have tested  three examples(3 test files and bubblesort) shown as below. 
+The errors only occurred in the file test03.asm and the program immediately stopped and all errors were put in .log files. 
+
+The others were tested without any errors detected and produced three output files, listing file, 
+error log file and machine readable object file, for each example.
+
+1)
+#Input: test01.asm
+#Output: 
+a. test01.lst 
+b. test01.log (without any error messages)
+c. test01.o
+
+2)
+#Input:asm test02.asm
+#Output: 
+a. test02.lst 
+b. test02.log (without any error messages)
+c. test02.o
+
+3)
+#Input: test03.asm
+#Output: 
+a. test03.log (with error messages in log file)
+
+
+4)
+#Input: BubbleSort.asm
+#Output: 
+a. BubbleSort.lst 
+b. BubbleSort.log (without any error messages)
+c. BubbleSort.o
+
